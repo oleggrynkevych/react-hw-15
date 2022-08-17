@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Post from './Post.jsx';
+import Post from './Post/Post';
 import {ANAKIN_IMAGE, RAY_IMAGE} from './images.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

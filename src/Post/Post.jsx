@@ -2,6 +2,9 @@ import React from "react";
 import './Post.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCircleCheck, faComment, faRetweet, faHeart, faArrowDownLong} from '@fortawesome/free-solid-svg-icons'
+import { Coments } from "./Coments";
+import { Reposts } from "./Reposts";
+import { Likes } from "./Likes";
 
 
 function Post({author, content, image, date}) {
@@ -27,15 +30,15 @@ function Post({author, content, image, date}) {
       <div className="interactive-info">
         <div>
           <FontAwesomeIcon icon={faComment}/>
-          <span>482</span>
+          {Coments()}
         </div>
         <div>
           <FontAwesomeIcon icon={faRetweet}/>
-          <span>146</span>
+          {Reposts()}
         </div>
         <div>
           <FontAwesomeIcon icon={faHeart}/>
-          <span>887</span>
+          {Likes()}        
         </div>
         <div>
           <FontAwesomeIcon icon={faArrowDownLong}/>        
